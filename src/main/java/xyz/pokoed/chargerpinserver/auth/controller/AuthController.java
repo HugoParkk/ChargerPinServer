@@ -21,4 +21,11 @@ public class AuthController {
 
         return authService.join(request);
     }
+
+    @PostMapping("/login")
+    public Object login(@RequestBody UserRequest request) {
+        log.info("/auth/login start");
+
+        return authService.login(request);
+    }
 }
