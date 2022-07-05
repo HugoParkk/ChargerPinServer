@@ -1,5 +1,9 @@
 server:
   port: 8081
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
 
 spring:
   datasource:
@@ -11,3 +15,6 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+value:
+  test: http://openapi.kepco.co.kr/service/EvInfoServiceV2/getEvSearchList?ServiceKey=sd5MjLmHMkxewkmi6ycojnifRbgsYSBMJAMog7%2FmzHNQmQ0bf2jM5uAFwg9Wrm8TUmvCdB2WnWCKHF6D%2BbVCdA%3D%3D
+  test1: http://openapi.kepco.co.kr/service/EvInfoServiceV2/getEvSearchList?ServiceKey=sd5MjLmHMkxewkmi6ycojnifRbgsYSBMJAMog7/mzHNQmQ0bf2jM5uAFwg9Wrm8TUmvCdB2WnWCKHF6D+bVCdA==

@@ -1,8 +1,8 @@
 package xyz.pokoed.chargerpinserver.chargerInfo.service;
 
-import org.springframework.stereotype.Service;
+import org.springframework.http.ResponseEntity;
 
-@Service
-public class ChargerInfoService {
+public interface ChargerInfoService {
+    public ResponseEntity<String> searchInfo (String keyword);
 
 }
