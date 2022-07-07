@@ -19,7 +19,7 @@ public class ChargerInfoController {
     @PostMapping("/info")
     public Object searchCharger(@RequestBody ChargerInfoRequest request) {
         log.debug("/info start");
-        
+
 //        log.info("{}", request.getKeyword());
 
         // 위치, 이름 모두 됨
