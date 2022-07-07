@@ -15,6 +15,7 @@ import java.util.Optional;
 @Service
 @AllArgsConstructor
 public class AuthServiceImpl implements AuthService{
+    // 아래 Autowired 어노테이션 제거해도 될듯..?
     @Autowired
     private PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
