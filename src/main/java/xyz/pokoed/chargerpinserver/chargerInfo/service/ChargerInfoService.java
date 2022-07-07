@@ -4,5 +4,4 @@ import org.springframework.http.ResponseEntity;
 
 public interface ChargerInfoService {
     public ResponseEntity<String> searchInfo (String keyword);
-
 }
