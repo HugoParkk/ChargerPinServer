@@ -10,6 +10,7 @@ import org.springframework.data.domain.Sort;
 import xyz.pokoed.chargerpinserver.model.UserBookmarkChargerEntity;
 import xyz.pokoed.chargerpinserver.model.UserEntity;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.stream.IntStream;
 
@@ -35,7 +36,6 @@ public class UserRequestBookmarkChargerRepositoryTests {
 
                 UserBookmarkChargerEntity bookmark = UserBookmarkChargerEntity.builder()
                         .chargerName("bookmark" + i)
-                        .chargerId(i)
                         .userId(user.getUserId())
                         .build();
                 userBookmarkChargerRepository.save(bookmark);
@@ -59,7 +59,6 @@ public class UserRequestBookmarkChargerRepositoryTests {
         UserBookmarkChargerEntity bookmark = UserBookmarkChargerEntity.builder()
                 .bookmarkId(100L)
                 .chargerName("Update ChargerName")
-                .chargerId(1010)
                 .userId("Update UserId")
                 .build();
         System.out.println(userBookmarkChargerRepository.save(bookmark));
@@ -102,5 +101,20 @@ public class UserRequestBookmarkChargerRepositoryTests {
     public void testDeleteByUserId() {
         String userId = "TestSample99";
         userBookmarkChargerRepository.deleteByUserId(userId);
+    }
+
+    @Test
+    public void testFindByUserId() {
+        String userId = "TestSample99";
+        List<UserBookmarkChargerEntity> result = userBookmarkChargerRepository.findByUserId(userId);
+        System.out.println("=========================================");
+        if (!result.isEmpty()) {
+            result.stream().forEach(e -> {
+                UserBookmarkChargerEntity bookmark = e;
+                System.out.println(bookmark);
+            });
+        } else {
+            System.out.println("Is Empty!!");
+        }
     }
 }
