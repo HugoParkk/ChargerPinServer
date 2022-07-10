@@ -19,5 +19,5 @@ public interface UserBookmarkChargerRepository extends JpaRepository<UserBookmar
     @Query("select u from UserBookmarkChargerEntity u where u.userId = ?1")
     List<UserBookmarkChargerEntity> findByUserId(String userId);
 
-    boolean existsByChargerId(int chargerId);
+    boolean existsByChargerIdAndUserId(int chargerId, String userId);
 }
