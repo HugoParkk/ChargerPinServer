@@ -1,139 +1,32 @@
-[INFO ] 00:54:15.487 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 00:54:15.503 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-[INFO ] 00:54:15.552 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-[INFO ] 00:54:15.866 x.p.c.ChargerPinServerApplication - Starting ChargerPinServerApplication using Java 11.0.11 on bagjong-yeons-MacBook-Air.local with PID 12751 (/Users/jongyeon-park/Documents/Proj_ChargerPIN/chargerPinServer/build/classes/java/main started by jongyeon-park in /Users/jongyeon-park/Documents/Proj_ChargerPIN/chargerPinServer)
-[INFO ] 00:54:15.868 x.p.c.ChargerPinServerApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 00:54:16.189 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 00:54:16.201 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
-[WARN ] 00:54:16.271 o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[xyz.pokoed.chargerpinserver]' package. Please check your configuration.
-[INFO ] 00:54:16.389 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
-[INFO ] 00:54:16.391 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
-[INFO ] 00:54:16.391 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 00:54:16.391 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
-[INFO ] 00:54:16.415 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 00:54:16.415 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 538 ms
-[INFO ] 00:54:16.472 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-[INFO ] 00:54:16.515 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-[INFO ] 00:54:16.515 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-[INFO ] 00:54:16.638 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 00:54:16.641 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 00:54:16.744 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+[INFO ] 22:34:48.656 x.p.c.ChargerPinServerApplication - Starting ChargerPinServerApplication using Java 11.0.11 on bagjong-yeons-MacBook-Air.local with PID 19633 (/Users/jongyeon-park/Documents/Proj_ChargerPIN/chargerPinServer/build/classes/java/main started by jongyeon-park in /Users/jongyeon-park/Documents/Proj_ChargerPIN/chargerPinServer)
+[INFO ] 22:34:48.658 x.p.c.ChargerPinServerApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 22:34:48.709 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 22:34:48.709 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 22:34:49.612 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 22:34:49.685 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+[WARN ] 22:34:49.851 o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[xyz.pokoed.chargerpinserver]' package. Please check your configuration.
+[INFO ] 22:34:50.648 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 22:34:50.660 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[INFO ] 22:34:50.660 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 22:34:50.661 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+[INFO ] 22:34:50.769 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 22:34:50.769 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2059 ms
+[INFO ] 22:34:51.028 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+[INFO ] 22:34:51.134 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 22:34:51.237 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 22:34:51.436 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 22:34:51.449 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+[INFO ] 22:34:51.961 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 22:34:51.969 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 22:34:52.339 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: 0473f78d-77d4-44ae-9ef9-991c698949be
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[INFO ] 00:54:16.750 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3aa2718, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ed41f48, org.springframework.security.web.context.SecurityContextPersistenceFilter@12890b55, org.springframework.security.web.header.HeaderWriterFilter@4a5b252c, org.springframework.security.web.authentication.logout.LogoutFilter@24f6389e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6278a078, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71198b5e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a12254a, org.springframework.security.web.session.SessionManagementFilter@3e7633e1, org.springframework.security.web.access.ExceptionTranslationFilter@484708d4]
-[WARN ] 00:54:16.780 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 00:54:16.925 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 00:54:16.937 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
-[INFO ] 00:54:16.939 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
-[INFO ] 00:54:16.954 x.p.c.ChargerPinServerApplication - Started ChargerPinServerApplication in 1.213 seconds (JVM running for 3633.341)
-[INFO ] 00:54:16.964 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 00:54:18.364 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 00:54:18.365 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-[INFO ] 00:54:18.423 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-[INFO ] 00:54:18.646 x.p.c.ChargerPinServerApplication - Starting ChargerPinServerApplication using Java 11.0.11 on bagjong-yeons-MacBook-Air.local with PID 12751 (/Users/jongyeon-park/Documents/Proj_ChargerPIN/chargerPinServer/build/classes/java/main started by jongyeon-park in /Users/jongyeon-park/Documents/Proj_ChargerPIN/chargerPinServer)
-[INFO ] 00:54:18.647 x.p.c.ChargerPinServerApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 00:54:18.901 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 00:54:18.918 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
-[WARN ] 00:54:18.977 o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[xyz.pokoed.chargerpinserver]' package. Please check your configuration.
-[INFO ] 00:54:19.121 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
-[INFO ] 00:54:19.122 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
-[INFO ] 00:54:19.123 o.a.catalina.core.StandardService - Starting service [Tomcat]
-[INFO ] 00:54:19.123 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
-[INFO ] 00:54:19.140 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 00:54:19.140 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 484 ms
-[INFO ] 00:54:19.186 com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
-[INFO ] 00:54:19.226 com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
-[INFO ] 00:54:19.226 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-[INFO ] 00:54:19.334 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 00:54:19.334 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 00:54:19.438 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: 4f7bc370-d702-4ca4-adb3-a5bcb3db0bb2
+Using generated security password: 836610e6-aac6-4087-bb13-2a84f9822ba1
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-[INFO ] 00:54:19.444 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@469eafb6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13fceaa4, org.springframework.security.web.context.SecurityContextPersistenceFilter@635181ef, org.springframework.security.web.header.HeaderWriterFilter@7e64dd09, org.springframework.security.web.authentication.logout.LogoutFilter@6b24d10f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3872acb9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6026b22b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c72776e, org.springframework.security.web.session.SessionManagementFilter@32eac7bb, org.springframework.security.web.access.ExceptionTranslationFilter@40f37165]
-[WARN ] 00:54:19.454 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 00:54:19.647 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[INFO ] 00:54:19.656 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
-[INFO ] 00:54:19.659 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
-[INFO ] 00:54:19.671 x.p.c.ChargerPinServerApplication - Started ChargerPinServerApplication in 1.106 seconds (JVM running for 3636.058)
-[INFO ] 00:54:19.673 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 00:54:22.222 x.p.c.r.UserRequestBookmarkChargerRepositoryTests - Starting UserRequestBookmarkChargerRepositoryTests using Java 11.0.11 on bagjong-yeons-MacBook-Air.local with PID 13594 (started by jongyeon-park in /Users/jongyeon-park/Documents/Proj_ChargerPIN/chargerPinServer)
-[INFO ] 00:54:22.229 x.p.c.r.UserRequestBookmarkChargerRepositoryTests - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 00:54:23.975 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 00:54:24.074 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 2 JPA repository interfaces.
-[WARN ] 00:54:24.279 o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[xyz.pokoed.chargerpinserver]' package. Please check your configuration.
-[INFO ] 00:54:25.309 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
-[INFO ] 00:54:25.534 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 00:54:25.807 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-[INFO ] 00:54:25.988 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-[INFO ] 00:54:26.036 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-[INFO ] 00:54:27.244 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 00:54:27.257 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 00:54:28.265 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: cce5d3ca-57be-43cb-807a-037c9566a9f9
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[INFO ] 00:54:28.472 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@43201f84, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c51c756, org.springframework.security.web.context.SecurityContextPersistenceFilter@22c4354d, org.springframework.security.web.header.HeaderWriterFilter@50b2ba2c, org.springframework.security.web.authentication.logout.LogoutFilter@510bd87a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a012678, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c599679, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ef277ef, org.springframework.security.web.session.SessionManagementFilter@18918d70, org.springframework.security.web.access.ExceptionTranslationFilter@4880a9d]
-[WARN ] 00:54:28.949 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 00:54:30.969 x.p.c.r.UserRequestBookmarkChargerRepositoryTests - Started UserRequestBookmarkChargerRepositoryTests in 9.472 seconds (JVM running for 11.489)
-[INFO ] 00:54:31.502 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 00:54:31.520 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-[INFO ] 00:54:31.580 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-[INFO ] 00:57:52.855 x.p.c.r.UserRequestBookmarkChargerRepositoryTests - Starting UserRequestBookmarkChargerRepositoryTests using Java 11.0.11 on bagjong-yeons-MacBook-Air.local with PID 13622 (started by jongyeon-park in /Users/jongyeon-park/Documents/Proj_ChargerPIN/chargerPinServer)
-[INFO ] 00:57:52.858 x.p.c.r.UserRequestBookmarkChargerRepositoryTests - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 00:57:54.109 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 00:57:54.196 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
-[WARN ] 00:57:54.403 o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[xyz.pokoed.chargerpinserver]' package. Please check your configuration.
-[INFO ] 00:57:55.463 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
-[INFO ] 00:57:55.660 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 00:57:55.842 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-[INFO ] 00:57:56.026 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-[INFO ] 00:57:56.058 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-[INFO ] 00:57:56.772 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 00:57:56.783 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 00:57:57.632 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: 360738e4-cae5-4aad-8bff-73761907bed8
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[INFO ] 00:57:57.808 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@40d04cf8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75507e68, org.springframework.security.web.context.SecurityContextPersistenceFilter@468646ea, org.springframework.security.web.header.HeaderWriterFilter@180e33b0, org.springframework.security.web.authentication.logout.LogoutFilter@2119b989, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c0ab04f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46051269, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@152d2a58, org.springframework.security.web.session.SessionManagementFilter@78f35e39, org.springframework.security.web.access.ExceptionTranslationFilter@4423692a]
-[WARN ] 00:57:58.221 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 00:57:59.736 x.p.c.r.UserRequestBookmarkChargerRepositoryTests - Started UserRequestBookmarkChargerRepositoryTests in 7.582 seconds (JVM running for 10.021)
-[INFO ] 00:58:07.050 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 00:58:07.059 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-[INFO ] 00:58:07.146 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-[INFO ] 00:58:15.894 x.p.c.r.UserRequestBookmarkChargerRepositoryTests - Starting UserRequestBookmarkChargerRepositoryTests using Java 11.0.11 on bagjong-yeons-MacBook-Air.local with PID 13633 (started by jongyeon-park in /Users/jongyeon-park/Documents/Proj_ChargerPIN/chargerPinServer)
-[INFO ] 00:58:15.896 x.p.c.r.UserRequestBookmarkChargerRepositoryTests - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 00:58:17.212 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 00:58:17.297 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
-[WARN ] 00:58:17.492 o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[xyz.pokoed.chargerpinserver]' package. Please check your configuration.
-[INFO ] 00:58:18.458 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
-[INFO ] 00:58:18.645 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 00:58:18.801 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-[INFO ] 00:58:18.910 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-[INFO ] 00:58:18.941 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-[INFO ] 00:58:19.653 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 00:58:19.666 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 00:58:20.543 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: 3595822a-1bd7-4af7-a1b5-d7032e36f655
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[INFO ] 00:58:20.735 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7304ca87, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c07023, org.springframework.security.web.context.SecurityContextPersistenceFilter@67baa05, org.springframework.security.web.header.HeaderWriterFilter@5b86f4cb, org.springframework.security.web.authentication.logout.LogoutFilter@50b2ba2c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4803bf73, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@347f8029, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13ae87a6, org.springframework.security.web.session.SessionManagementFilter@20462820, org.springframework.security.web.access.ExceptionTranslationFilter@76219fe]
-[WARN ] 00:58:21.074 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 00:58:22.483 x.p.c.r.UserRequestBookmarkChargerRepositoryTests - Started UserRequestBookmarkChargerRepositoryTests in 7.216 seconds (JVM running for 9.102)
-[INFO ] 00:58:22.874 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 00:58:22.880 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-[INFO ] 00:58:22.938 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-[INFO ] 01:22:30.538 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 01:22:30.547 com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
-[INFO ] 01:22:30.595 com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+[INFO ] 22:34:52.392 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@b1567ef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d971af4, org.springframework.security.web.context.SecurityContextPersistenceFilter@81865e2, org.springframework.security.web.header.HeaderWriterFilter@260c6f3c, org.springframework.security.web.authentication.logout.LogoutFilter@1855074c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ed8a5c0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19586e0b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5bd70e4f, org.springframework.security.web.session.SessionManagementFilter@66637f7e, org.springframework.security.web.access.ExceptionTranslationFilter@4f367a0f]
+[WARN ] 22:34:52.428 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 22:34:53.385 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 22:34:53.419 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[INFO ] 22:34:53.444 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[INFO ] 22:34:53.488 x.p.c.ChargerPinServerApplication - Started ChargerPinServerApplication in 5.413 seconds (JVM running for 7.596)
