@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class BookmarkRequest {
+    private Long bookmarkId;
     private String chargerName;
+    private int chargerId;
     private String userId;
 }
