@@ -40,3 +40,4 @@ out/
 ### logs ###
 logs/
 logs/log.txt
+src/main/resources/application.yml
