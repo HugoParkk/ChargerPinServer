@@ -21,5 +21,8 @@ public class UserBookmarkChargerEntity {
     private String chargerName;
 
     @Column(nullable = false)
+    private int chargerId;
+
+    @Column(nullable = false)
     private String userId;
 }
