@@ -47,4 +47,19 @@ public class AuthServiceImpl implements AuthService{
         }
         return ResponseEntity.ok(new UserResponse(1, "OK"));
     }
+
+    @Override
+    public ResponseEntity<UserResponse> update(UserRequest user) {
+        if (!userRepository.existsById(user.getUserId())) {
+            return ResponseEntity.badRequest().body(new UserResponse(0, "존재하지 않는 계정입니다."));
+        }
+        String password = passwordEncoder.encode(user.getUserPassword());
+        UserEntity userEntity = UserEntity.builder()
+                .userId(user.getUserId())
+                .password(password)
+                .name(user.getUserName())
+                .build();
+        userRepository.save(userEntity);
+        return ResponseEntity.ok(new UserResponse(1, "OK"));
+    }
 }

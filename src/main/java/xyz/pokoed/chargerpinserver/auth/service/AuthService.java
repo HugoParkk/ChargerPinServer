@@ -8,4 +8,5 @@ import xyz.pokoed.chargerpinserver.model.UserEntity;
 public interface AuthService {
     public ResponseEntity<UserResponse> join (UserRequest user);
     public ResponseEntity<UserResponse> login (UserRequest user);
+    public ResponseEntity<UserResponse> update (UserRequest user);
 }
