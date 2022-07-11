@@ -29,4 +29,11 @@ public class AuthController {
         return authService.login(request);
     }
 
+    @PatchMapping("/update")
+    public Object update(@RequestBody UserRequest request) {
+        log.info("/auth/update start");
+
+        return authService.update(request);
+    }
+
 }
