@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 public class BookmarkRequest {
     private Long bookmarkId;
     private String chargerName;
+    private String chargerAddr;
     private int chargerId;
     private String userId;
 }
