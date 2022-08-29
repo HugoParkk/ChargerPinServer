@@ -42,4 +42,12 @@ public class BookmarkController {
 
         return bookmarkService.delete(id);
     }
+
+    @DeleteMapping("/delete/{id}/{userId}")
+    public Object deleteBookmarkByChargerId(@PathVariable int id, @PathVariable String userId) {
+        log.info("/bookmark/delete start");
+        log.info("/bookmark/delete/" + id + "/" + userId);
+
+        return bookmarkService.deleteByChargerId(id, userId);
+    }
 }
