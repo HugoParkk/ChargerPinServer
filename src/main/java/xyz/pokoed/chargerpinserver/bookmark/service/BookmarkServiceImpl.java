@@ -23,6 +23,7 @@ public class BookmarkServiceImpl implements BookmarkService {
         }
         UserBookmarkChargerEntity bookmarkChargerEntity = UserBookmarkChargerEntity.builder()
                 .chargerName(request.getChargerName())
+                .chargerAddr(request.getChargerAddr())
                 .chargerId(request.getChargerId())
                 .userId(request.getUserId())
                 .build();
@@ -57,6 +58,12 @@ public class BookmarkServiceImpl implements BookmarkService {
     @Override
     public ResponseEntity<BookmarkResponse> delete(Long id) {
         userBookmarkChargerRepository.deleteById(id);
+        return ResponseEntity.ok(new BookmarkResponse(1, "ok"));
+    }
+
+    @Override
+    public ResponseEntity<BookmarkResponse> deleteByChargerId(int id, String userId) {
+        userBookmarkChargerRepository.deleteByChargerIdAndUserId(id, userId);
         return ResponseEntity.ok(new BookmarkResponse(1, "ok"));
     }
 }

@@ -12,4 +12,5 @@ public interface BookmarkService {
     public ResponseEntity<List<UserBookmarkChargerEntity>> read(String userId);
     public ResponseEntity<BookmarkResponse> update(BookmarkRequest request);
     public ResponseEntity<BookmarkResponse> delete(Long id);
+    public ResponseEntity<BookmarkResponse> deleteByChargerId(int id, String userId);
 }
